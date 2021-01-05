@@ -1,0 +1,20 @@
+{
+  "name": "vuepress",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "1.5.4",
+    "vuepress-theme-reco": "1.5.7",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-meting": "^0.1.1"
+  },
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "vue-class-component": "^7.2.3"
+  },
+  "description": ""
+}
