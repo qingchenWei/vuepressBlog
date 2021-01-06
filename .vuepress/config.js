@@ -132,18 +132,18 @@ module.exports = {
         height: 352,
       },
     ],
-    [
-      'meting', {
-        metingApi: "https://api.i-meto.com/meting/api",
-        meting: {
-          server: "netease",
-          type: "playlist",
-          mid: "2539599584",
-        },          // 不配置该项的话不会出现全局播放器
-        aplayer: {
-          lrcType: 3
-        }
-      },
-    ],
+    // [
+    //   'meting', {
+    //     metingApi: "https://api.i-meto.com/meting/api",
+    //     meting: {
+    //       server: "netease",
+    //       type: "playlist",
+    //       mid: "2539599584",
+    //     },          // 不配置该项的话不会出现全局播放器
+    //     aplayer: {
+    //       lrcType: 3
+    //     }
+    //   },
+    // ],
   ],
 };
