@@ -1,11 +1,4 @@
 ---
-home: true
-heroText: 
-tagline: 这世界上没有优秀的理念，只有脚踏实地的结果。
-isShowTitleInHome: false
-actionText: Guide
-actionLink: /views/other/guide
-features:
 - title: Yesterday
   details: 开发一款看着开心、写着顺手的 vuepress 博客主题
 - title: Today
