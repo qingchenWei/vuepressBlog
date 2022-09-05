@@ -100,7 +100,7 @@ module.exports = {
       {
         showIcon: "/favicon.ico",
         showText: "欢迎来到我的小屋！",
-        hideIcon: "/failure.ico",
+        hideIcon: "/favicon.ico",
         hideText: "快点回来看看我！",
         recoverTime: 2000,
       },
