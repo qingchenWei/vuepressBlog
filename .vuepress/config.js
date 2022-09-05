@@ -1,5 +1,5 @@
 module.exports = {
-  title: "卫鹏辉",
+  title: "qingchenWei",
   description: "这世界上没有优秀的理念，只有脚踏实地的结果。",
   base: "/",
   dest: "test",
