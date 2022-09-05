@@ -1,8 +1,16 @@
 ---
-- title: Yesterday
-  details: 开发一款看着开心、写着顺手的 vuepress 博客主题
-- title: Today
-  details: 希望帮助更多的人花更多的时间在内容创作上，而不是博客搭建上
-- title: Tomorrow
-  details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
+home: true
+heroImage: /logo.png
+heroText: Welcome to hep.
+tagline: Born to win.
+actionText: 开始探索之旅 →
+actionLink: /zh/guide/
+features:
+- title: 关于我
+  details: 小景哥哥是一个爱好英语的程序员，有点小文艺，有点小年轻，希望和大家称为好朋友。
+- title: 算法
+  details: 一天一道算法题，准备逆天。
+- title: 生活点点滴滴
+  details: 记录生活中美好的时刻，把生命中的点点滴滴都堆积成无法比拟的幸福。
+footer: Hep Licensed | Copyright © 2021-present JasonJing
 ---
