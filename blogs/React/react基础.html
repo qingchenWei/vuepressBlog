@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>react基础 | qingchenWei</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/favicon.ico">
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/click.js"></script>
+    <meta name="description" content="这世界上没有优秀的理念，只有脚踏实地的结果。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.a1869e6f.css" as="style"><link rel="preload" href="/assets/js/app.5891d3f4.js" as="script"><link rel="preload" href="/assets/js/3.2594613d.js" as="script"><link rel="preload" href="/assets/js/1.ab4206fb.js" as="script"><link rel="preload" href="/assets/js/4.22e4a246.js" as="script"><link rel="prefetch" href="/assets/js/10.fd516ae0.js"><link rel="prefetch" href="/assets/js/11.23b691e4.js"><link rel="prefetch" href="/assets/js/12.fcab6a65.js"><link rel="prefetch" href="/assets/js/13.36d3b271.js"><link rel="prefetch" href="/assets/js/14.71157d11.js"><link rel="prefetch" href="/assets/js/15.c6100615.js"><link rel="prefetch" href="/assets/js/16.cc48d2ee.js"><link rel="prefetch" href="/assets/js/17.9c04215b.js"><link rel="prefetch" href="/assets/js/18.f6339332.js"><link rel="prefetch" href="/assets/js/19.7d08a376.js"><link rel="prefetch" href="/assets/js/20.6fa85398.js"><link rel="prefetch" href="/assets/js/21.ed05cacd.js"><link rel="prefetch" href="/assets/js/22.8cdc0c31.js"><link rel="prefetch" href="/assets/js/23.2d61bec1.js"><link rel="prefetch" href="/assets/js/24.4ea1c29e.js"><link rel="prefetch" href="/assets/js/25.d51b1553.js"><link rel="prefetch" href="/assets/js/26.946b76cd.js"><link rel="prefetch" href="/assets/js/27.e7686fcf.js"><link rel="prefetch" href="/assets/js/28.099f79be.js"><link rel="prefetch" href="/assets/js/29.3c2f1afc.js"><link rel="prefetch" href="/assets/js/30.5decae6a.js"><link rel="prefetch" href="/assets/js/31.ff97a7fa.js"><link rel="prefetch" href="/assets/js/32.1f52a989.js"><link rel="prefetch" href="/assets/js/33.50d6d28f.js"><link rel="prefetch" href="/assets/js/34.2e37ffac.js"><link rel="prefetch" href="/assets/js/35.b6a2e1a8.js"><link rel="prefetch" href="/assets/js/36.aa7fd522.js"><link rel="prefetch" href="/assets/js/37.2b120d5f.js"><link rel="prefetch" href="/assets/js/38.7aa8daae.js"><link rel="prefetch" href="/assets/js/39.cdb5300e.js"><link rel="prefetch" href="/assets/js/40.0dc4f74e.js"><link rel="prefetch" href="/assets/js/41.5c6b419e.js"><link rel="prefetch" href="/assets/js/42.5736add1.js"><link rel="prefetch" href="/assets/js/43.aead9cc1.js"><link rel="prefetch" href="/assets/js/44.82c17d26.js"><link rel="prefetch" href="/assets/js/45.d8420453.js"><link rel="prefetch" href="/assets/js/46.1d501768.js"><link rel="prefetch" href="/assets/js/47.508bcf02.js"><link rel="prefetch" href="/assets/js/48.33411c19.js"><link rel="prefetch" href="/assets/js/49.6fa9e380.js"><link rel="prefetch" href="/assets/js/5.726e24ec.js"><link rel="prefetch" href="/assets/js/50.f4443631.js"><link rel="prefetch" href="/assets/js/51.5c96222a.js"><link rel="prefetch" href="/assets/js/52.7bec0431.js"><link rel="prefetch" href="/assets/js/53.b61a03e2.js"><link rel="prefetch" href="/assets/js/54.1cadb2d1.js"><link rel="prefetch" href="/assets/js/55.767f3dcf.js"><link rel="prefetch" href="/assets/js/56.7bebaced.js"><link rel="prefetch" href="/assets/js/57.b4ee2c9f.js"><link rel="prefetch" href="/assets/js/58.f7d47907.js"><link rel="prefetch" href="/assets/js/59.ca42a853.js"><link rel="prefetch" href="/assets/js/6.b37aff67.js"><link rel="prefetch" href="/assets/js/7.16c4057c.js"><link rel="prefetch" href="/assets/js/8.af1ea4d3.js"><link rel="prefetch" href="/assets/js/9.877dc9a7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a1869e6f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>qingchenWei</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>卫鹏辉</span>
+            
+          <span data-v-64685f0e>2018 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.png" alt="qingchenWei" class="logo"> <span class="site-name">qingchenWei</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/React/" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mongoDB/" class="nav-link"><i class="iconfont undefined"></i>
+  mongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Css+Html/" class="nav-link"><i class="iconfont undefined"></i>
+  Css+Html
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/优化/" class="nav-link"><i class="iconfont undefined"></i>
+  优化
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安全/" class="nav-link"><i class="iconfont undefined"></i>
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/模块化开发/" class="nav-link"><i class="iconfont undefined"></i>
+  模块化开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/协议/" class="nav-link"><i class="iconfont undefined"></i>
+  协议
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      链接
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/qingchenWei" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    卫鹏辉
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>47</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>29</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/React/" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/categories/mongoDB/" class="nav-link"><i class="iconfont undefined"></i>
+  mongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Css+Html/" class="nav-link"><i class="iconfont undefined"></i>
+  Css+Html
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/优化/" class="nav-link"><i class="iconfont undefined"></i>
+  优化
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安全/" class="nav-link"><i class="iconfont undefined"></i>
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/模块化开发/" class="nav-link"><i class="iconfont undefined"></i>
+  模块化开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/协议/" class="nav-link"><i class="iconfont undefined"></i>
+  协议
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      链接
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/qingchenWei" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>react基础</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>卫鹏辉</span>
+            
+          <span data-v-64685f0e>2018 - </span>
+          2022
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">react基础</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>卫鹏辉</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2022-09-01</span></i> <!----> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>react基础</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="react简介"><a href="#react简介" class="header-anchor">#</a> React简介</h1> <p><strong>react是什么？</strong></p> <p>React用于构建用户界面的JS库。是一个将数据渲染为HTML视图的开源JS库。</p> <p><strong>为什么学？</strong></p> <p>1.原生JS操作DOM繁琐，效率低</p> <p>2.使用JS直接操作DOM,浏览器会进行大量的重绘重排</p> <p>3.原生JS没有组件化编码方案，代码复用低</p> <blockquote><p>在学习之前最好看一下关于npm的知识：下面是我在网上看见的一个写的还不错的npm的文章</p> <p><a href="https://blog.csdn.net/qq_25502269/article/details/79346545" target="_blank" rel="noopener noreferrer">npm<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h1 id="react入门"><a href="#react入门" class="header-anchor">#</a> React入门</h1> <h2 id="react-基础案例"><a href="#react-基础案例" class="header-anchor">#</a> React 基础案例</h2> <p>1.先倒入三个包：</p> <p>【先引入react.development.js，后引入react-dom.development.js】</p> <div class="language-cmd line-numbers-mode"><pre class="language-text"><code>react.development.js
+react-dom.development.js
+babel.min.js 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>2.创建一个容器</p> <p>3.创建虚拟DOM，渲染到容器中</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 准备好容器 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>test<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- 引入依赖 ,引入的时候，必须就按照这个步骤--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../js/react.development.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../js/react-dom.development.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../js/babel.min.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!--这里使用了babel用来解析jsx语法--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/babel<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+        <span class="token comment">// 1.创建虚拟DOM</span>
+        <span class="token keyword">const</span> <span class="token constant">VDOM</span> <span class="token operator">=</span> <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Hello<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>  <span class="token comment">//这个地方使用的是JSX语法，不需要加&quot;&quot;</span>
+        <span class="token comment">// 2.渲染，如果有多个渲染同一个容器，后面的会将前面的覆盖掉</span>
+        ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token constant">VDOM</span><span class="token punctuation">,</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>这样，就会在页面中的这个div容器上添加这个h1.</p> <p><img src="/assets/img/1611196030416.9e1410ea.png" alt="渲染结果"></p> <h2 id="jsx基础语法"><a href="#jsx基础语法" class="header-anchor">#</a> JSX基础语法</h2> <p>1.定义虚拟DOM，不能使用“”</p> <p>2.标签中混入JS表达式的时候使用{}</p> <p>3.样式的类名指定不要使用class，使用className</p> <p>4.内敛样式要使用双大括号包裹</p> <p>5.不能有多个根标签，只能有一个跟标签</p> <p>6.标签必须闭合</p> <p>7.如果小写字母开头，就将标签转化为html同名元素，如果html中无该标签对应的元素，就报错；如果是大写字母开头，react就去渲染对应的组件，如果没有就报错</p> <blockquote><p>关于JS表达式和JS语句：</p> <p>JS表达式：返回一个值，可以放在任何一个需要值的地方  a  a+b  demo(a)  arr.map() function text(){}
+JS语句：if(){} for(){} while(){} swith(){} 不会返回一个值</p></blockquote> <p>实例如下：</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+        <span class="token selector">.sss</span><span class="token punctuation">{</span>
+            <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 准备好容器 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>test<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- 引入依赖 ,引入的时候，必须就按照这个步骤--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../js/react.development.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../js/react-dom.development.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../js/babel.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!--这里使用了js来创建虚拟DOM--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/babel<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+        <span class="token keyword">const</span> MyId <span class="token operator">=</span> <span class="token string">&quot;title&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> MyData <span class="token operator">=</span> <span class="token string">&quot;Cyk&quot;</span><span class="token punctuation">;</span>
+        <span class="token comment">// 1.创建虚拟DOM</span>
+        <span class="token keyword">const</span> <span class="token constant">VDOM</span> <span class="token operator">=</span> <span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>h1 id <span class="token operator">=</span> <span class="token punctuation">{</span>MyId<span class="token punctuation">.</span><span class="token function">toLocaleUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>span className <span class="token operator">=</span> <span class="token string">&quot;sss&quot;</span> style <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span>fontSize<span class="token operator">:</span><span class="token string">'50px'</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>sss<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span>
+        <span class="token comment">// 2.渲染，如果有多个渲染同一个容器，后面的会将前面的覆盖掉</span>
+        ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token constant">VDOM</span><span class="token punctuation">,</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><h2 id="两种创建虚拟dom的方式"><a href="#两种创建虚拟dom的方式" class="header-anchor">#</a> 两种创建虚拟DOM的方式</h2> <p><strong>1.使用JSX创建虚拟DOM</strong></p> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code> <span class="token keyword">const</span> <span class="token constant">VDOM</span> <span class="token operator">=</span> <span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>h1 id <span class="token operator">=</span> <span class="token punctuation">{</span>MyId<span class="token punctuation">.</span><span class="token function">toLocaleUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>span className <span class="token operator">=</span> <span class="token string">&quot;sss&quot;</span> style <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span>fontSize<span class="token operator">:</span><span class="token string">'50px'</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>sss<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>这个在上面的案例中已经演示过了 ，下面看看另外一种创建虚拟DOM的方式</p> <p><strong>2.使用JS创建虚拟DOM</strong></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 1.创建虚拟DOM[在这使用了js的语法]React.createElement(标签,标签属性,内容)</span>
+<span class="token keyword">const</span> <span class="token constant">VDOM</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>id<span class="token operator">:</span><span class="token string">&quot;title&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">&quot;nihao&quot;</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>使用JS和JSX都可以创建虚拟DOM，但是可以看出JS创建虚拟DOM比较繁琐，尤其是标签如果很多的情况下，所以还是比较推荐使用JSX来创建。</p> <h1 id="组件"><a href="#组件" class="header-anchor">#</a> 组件</h1> <p>当应用是以多组件的方式实现，这个应用就是一个组件化的应用</p> <blockquote><p><strong>注意：</strong> 组件名称必须以大写字母开头。</p> <p>React 会将以小写字母开头的组件视为原生 DOM 标签。例如，&lt; div /&gt;<code>代表 HTML 的 div 标签，而</code>&lt; Weclome /&gt; 则代表一个组件，并且需在作用域内使用 <code>Welcome</code></p> <p>传递的参数，不能在组件中改动</p></blockquote> <h2 id="函数式组件"><a href="#函数式组件" class="header-anchor">#</a> 函数式组件</h2> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//1.先创建函数，函数可以有参数，也可以没有，但是必须要有返回值 返回一个虚拟DOM
+function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+//2.进行渲染
+ReactDOM.Render(&lt;Welcom name = &quot;ss&quot; /&gt;,document.getElementById(&quot;div&quot;));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><img src="data:image/png;base64,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" alt="结果"></p> <p>让我们来回顾一下这个例子中发生了什么：</p> <ol><li>我们调用 <code>ReactDOM.render()</code> 函数，并传入 <code>&lt;Welcome name=&quot;Sara&quot; /&gt;</code> 作为参数。</li> <li>React 调用 <code>Welcome</code> 组件，并将 <code>{name: 'Sara'}</code> 作为 props 传入。</li> <li><code>Welcome</code> 组件将 <code>Hello, Sara</code> 元素作为返回值。</li> <li>React DOM 将 DOM 高效地更新为 <code>Hello, Sara</code>。</li></ol> <h2 id="class组件"><a href="#class组件" class="header-anchor">#</a> Class组件</h2> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//必须继承React.Component
+//然后重写Render()方法，该方法一定要有返回值，返回一个虚拟DOM
+class Welcome extends React.Component {
+  render() {
+    return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;;
+  }
+}
+//渲染 【这个跟之前也是一样的】
+ReactDOM.Render(&lt;Welcom name = &quot;ss&quot; /&gt;,document.getElementById(&quot;div&quot;));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>执行过程：</p> <p>​    1.React解析组件标签，找到相应的组件</p> <p>​    2.发现组件是类定义的，随后new出来的类的实例，并通过该实例调用到原型上的render方法</p> <p>​    3.将render返回的虚拟DOM转化为真实的DOM,随后呈现在页面中</p> <h2 id="组件案例"><a href="#组件案例" class="header-anchor">#</a> 组件案例</h2> <p>下面，我们通过一个案例更好的理解组件：【只关注与核心代码】</p> <p>我们发现组件是可以包含中使用的， 而且如果创建的数组，必须要代一个key。数组元素中使用的 key 在其兄弟节点之间应该是独一无二的。然而，它们不需要是全局唯一的。当我们生成两个不同的数组时，我们可以使用相同的 key 值</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/babel&quot;&gt;
+
+        //创建一个组件&lt;li&gt;
+        function GetLi(props){      
+            return &lt;li&gt;{props.value}&lt;/li&gt;
+        };
+
+        // 1.创建类式组件&lt;ul&gt;
+        class MyComponent extends React.Component{
+            render(){
+                console.log(this.props.arr);
+                let com = this.props.arr.map((item,index)=&gt;
+                     //在这个地方包含了GetLi这个组件，【注意不能用{}】
+                     //因为这个是一个列表，所以必须传递一个key【独一无二的Key】
+                     //key 帮助 React 识别哪些元素改变了，比如被添加或删除。
+                        &lt;GetLi value={item} key = {index} /&gt;
+                    );
+                console.log(com);
+                return &lt;ul&gt;{com}&lt;/ul&gt;
+            }
+        }
+        
+        let num = [1,2,3,4]
+        //2.渲染组件
+        ReactDOM.render(&lt;MyComponent  arr={num}/&gt;,document.getElementById(&quot;test&quot;);
+&lt;/script&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h1 id="组件实例的三大属性"><a href="#组件实例的三大属性" class="header-anchor">#</a> 组件实例的三大属性</h1> <h2 id="state"><a href="#state" class="header-anchor">#</a> state</h2> <p>我们都说React是一个状态机，体现是什么地方呢，就是体现在state上，通过与用户的交互，实现不同的状态，然后去渲染UI,这样就让用户的数据和界面保持一致了。state是组件的私有属性。</p> <p>在React中，更新组件的state，结果就会重新渲染用户界面(不需要操作DOM),一句话就是说，用户的界面会随着状态的改变而改变。</p> <p>state是组件对象最重要的属性，值是对象（可以包含多个key-value的组合）</p> <p><strong>案例</strong>：</p> <p>1.需求：页面显示【今天天气很炎热】，鼠标点击文字的时候，页面更改为【今天天气很凉爽】</p> <p>核心代码如下：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;!-- 准备好容器 --&gt;
+    &lt;div id=&quot;test&quot;&gt;
+        
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- 引入依赖 ,引入的时候，必须就按照这个步骤--&gt;
+&lt;script src=&quot;../js/react.development.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../js/react-dom.development.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;../js/babel.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--这里使用了js来创建虚拟DOM--&gt;
+&lt;script type=&quot;text/babel&quot;&gt;
+        //1.创建组件
+        class St extends React.Component{
+            constructor(props){
+                super(props);
+                //先给state赋值
+                this.state = {isHot:true,win:&quot;ss&quot;};
+                //找到原型的dem，根据dem函数创建了一个dem1的函数，并且将实例对象的this赋值过去
+                this.dem1 = this.dem.bind(this);
+            }
+            //render会调用1+n次【1就是初始化的时候调用的，n就是每一次修改state的时候调用的】
+            render(){ //这个This也是实例对象
+                //如果加dem()，就是将函数的回调值放入这个地方
+                //this.dem这里面加入this，并不是调用，只不过是找到了dem这个函数，在调用的时候相当于直接调用，并不是实例对象的调用
+                return &lt;h1 onClick = {this.dem1}&gt;今天天气很{this.state.isHot?&quot;炎热&quot;:&quot;凉爽&quot;}&lt;/h1&gt;    
+            }
+            //通过state的实例调用dem的时候，this就是实例对象
+            dem(){
+                const state =  this.state.isHot;
+                 //状态中的属性不能直接进行更改，需要借助API
+                // this.state.isHot = !isHot; 错误
+                //必须使用setState对其进行修改，并且这是一个合并
+                this.setState({isHot:!state});
+            }
+        }
+        // 2.渲染，如果有多个渲染同一个容器，后面的会将前面的覆盖掉
+        ReactDOM.render(&lt;St /&gt;,document.getElementById(&quot;test&quot;));
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><p>需要注意的是：</p> <p>1.组件的构造函数，必须要传递一个props参数</p> <p>2.特别关注this【重点】，类中所有的方法局部都开启了严格模式，如果直接进行调用，this就是undefined</p> <p>3.想要改变state,需要使用setState进行修改，如果只是修改state的部分属性，则不会影响其他的属性，这个只是合并并不是覆盖。</p> <p>this.setState()，该方法接收两种参数：对象或函数。</p> <ol><li>对象：即想要修改的state</li> <li>函数：接收两个函数，第一个函数接受两个参数，第一个是当前state，第二个是当前props，该函数返回一个对象，和直接传递对象参数是一样的，就是要修改的state；第二个函数参数是state改变后触发的回调</li></ol> <p>在此还需要注意的是，setState有异步更新和同步更新两种形式，那么什么时候会同步更新，什么时候会异步更新呢？</p> <p><strong>React控制之外的事件中调用setState是同步更新的。比如原生js绑定的事件，setTimeout/setInterval等</strong>。</p> <p><strong>大部分开发中用到的都是React封装的事件，比如onChange、onClick、onTouchMove等，这些事件处理程序中的setState都是异步处理的。</strong></p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//1.创建组件
+class St extends React.Component{
+    //可以直接对其进行赋值
+    state = {isHot:10};
+    render(){ //这个This也是实例对象
+        return &lt;h1 onClick = {this.dem}&gt;点击事件&lt;/h1&gt; 
+    }
+//箭头函数 [自定义方法---&gt;要用赋值语句的形式+箭头函数]
+    dem = () =&gt;{
+        //修改isHot
+        this.setState({ isHot: this.state.isHot + 1})
+        console.log(this.state.isHot);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>上面的案例中预期setState使得isHot变成了11，输出也应该是11。然而在控制台打印的却是10，也就是并没有对其进行更新。这是因为异步的进行了处理，在输出的时候还没有对其进行处理。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>componentDidMount(){
+    document.getElementById(&quot;test&quot;).addEventListener(&quot;click&quot;,()=&gt;{
+        this.setState({isHot: this.state.isHot + 1});
+        console.log(this.state.isHot);
+    })
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>但是通过这个原生JS的，可以发现，控制台打印的就是11，也就是已经对其进行了处理。也就是进行了同步的更新。</p> <p><strong>React怎么调用同步或者异步的呢？</strong></p> <p>在 React 的 setState 函数实现中，会根据一个变量 isBatchingUpdates 判断是直接更新 this.state 还是放到队列中延时更新，而 isBatchingUpdates 默认是 false，表示 setState 会同步更新 this.state；但是，有一个函数 batchedUpdates，该函数会把 isBatchingUpdates 修改为 true，而当 React 在调用事件处理函数之前就会先调用这个 batchedUpdates将isBatchingUpdates修改为true，这样由 React 控制的事件处理过程 setState 不会同步更新 this.state。</p> <p><strong>如果是同步更新，每一个setState对调用一个render，并且如果多次调用setState会以最后调用的为准，前面的将会作废；如果是异步更新，多个setSate会统一调用一次render</strong></p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>dem = () =&gt;{
+    this.setState({
+        isHot:  1,
+        cont:444
+    })
+    this.setState({
+    	isHot: this.state.isHot + 1
+
+    })
+    this.setState({
+        isHot:  888,
+        cont:888
+    })
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>上面的最后会输出：isHot是888，cont是888</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code> dem = () =&gt;{
+                
+                this.setState({
+                    isHot: this.state.isHot + 1,
+                    
+                })
+                this.setState({
+                    isHot: this.state.isHot + 1,
+                    
+                })
+                this.setState({
+                    isHot: this.state.isHot + 888
+                })
+            }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>初始isHot为10，最后isHot输出为898，也就是前面两个都没有执行。</p> <p>**注意！！这是异步更新才有的，如果同步更新，每一次都会调用render，这样每一次更新都会 **</p> <p><strong>简化版本：</strong></p> <p>1.state的赋值可以不再构造函数中进行</p> <p>2.使用了箭头函数，将this进行了改变</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;!-- 准备好容器 --&gt;
+    &lt;div id=&quot;test&quot;&gt;
+        
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- 引入依赖 ,引入的时候，必须就按照这个步骤--&gt;
+&lt;script src=&quot;../js/react.development.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../js/react-dom.development.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;../js/babel.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/babel&quot;&gt;
+        class St extends React.Component{
+            //可以直接对其进行赋值
+            state = {isHot:true};
+            render(){ //这个This也是实例对象
+                return &lt;h1 onClick = {this.dem}&gt;今天天气很{this.state.isHot?&quot;炎热&quot;:&quot;凉爽&quot;}&lt;/h1&gt;    
+                //或者使用{()=&gt;this.dem()也是可以的}
+            }
+            //箭头函数 [自定义方法---&gt;要用赋值语句的形式+箭头函数]
+            dem = () =&gt;{
+                console.log(this);
+                const state =  this.state.isHot;
+                this.setState({isHot:!state});
+            }
+        }
+        ReactDOM.render(&lt;St /&gt;,document.getElementById(&quot;test&quot;));       
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>如果想要在调用方法的时候传递参数，有两个方法：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;button onClick={(e) =&gt; this.deleteRow(id, e)}&gt;Delete Row&lt;/button&gt;
+&lt;button onClick={this.deleteRow.bind(this, id)}&gt;Delete Row&lt;/button&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>上述两种方式是等价的，分别通过<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener noreferrer">箭头函数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>和 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind" target="_blank" rel="noopener noreferrer"><code>Function.prototype.bind</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 来实现。</p> <p>在这两种情况下，React 的事件对象 <code>e</code> 会被作为第二个参数传递。如果通过箭头函数的方式，事件对象必须显式的进行传递，而通过 <code>bind</code> 的方式，事件对象以及更多的参数将会被隐式的进行传递。</p> <h2 id="props"><a href="#props" class="header-anchor">#</a> Props</h2> <p>Props主要用来传递数据，比如组件之间进行传值</p> <p>基本使用：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;div id = &quot;div&quot;&gt;
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;script type=&quot;text/babel&quot;&gt;
+    class Person extends React.Component{
+        render(){
+            return (
+                &lt;ul&gt;
+                    //接受数据并显示
+                    &lt;li&gt;{this.props.name}&lt;/li&gt;
+                    &lt;li&gt;{this.props.age}&lt;/li&gt;
+                    &lt;li&gt;{this.props.sex}&lt;/li&gt;
+                &lt;/ul&gt;
+            )
+        }
+    }
+    //传递数据
+    ReactDOM.render(&lt;Person name=&quot;tom&quot; age = &quot;41&quot; sex=&quot;男&quot;/&gt;,document.getElementById(&quot;div&quot;));
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>如果传递的数据是一个对象，可以更加简便的使用</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/babel&quot;&gt;
+    class Person extends React.Component{
+        render(){
+            return (
+                &lt;ul&gt;
+                    &lt;li&gt;{this.props.name}&lt;/li&gt;
+                    &lt;li&gt;{this.props.age}&lt;/li&gt;
+                    &lt;li&gt;{this.props.sex}&lt;/li&gt;
+                &lt;/ul&gt;
+            )
+        }
+    }
+    const p = {name:&quot;张三&quot;,age:&quot;18&quot;,sex:&quot;女&quot;}
+   ReactDOM.render(&lt;Person {...p}/&gt;,document.getElementById(&quot;div&quot;));
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>... 这个符号恐怕都不陌生，这个是一个展开运算符，主要用来展开数组，如下面这个例子：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+arr2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arr<span class="token punctuation">,</span><span class="token operator">...</span>arr1<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">//arr2 = [1,2,,3,4,5,6]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>但是他还有其他的用法：</p> <p>1.复制一个对象给另一个对象{...对象名}。此时这两个对象并没有什么联系了</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> p1 <span class="token operator">=</span> <span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;张三&quot;</span><span class="token punctuation">,</span>age<span class="token operator">:</span><span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>sex<span class="token operator">:</span><span class="token string">&quot;女&quot;</span><span class="token punctuation">}</span>
+<span class="token keyword">const</span> p2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token operator">...</span>p1<span class="token punctuation">}</span><span class="token punctuation">;</span>
+p1<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;sss&quot;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>p2<span class="token punctuation">)</span>  <span class="token comment">//{name:&quot;张三&quot;,age:&quot;18&quot;,sex:&quot;女&quot;}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>2.在复制的时候，合并其中的属性</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code> <span class="token keyword">const</span> p1 <span class="token operator">=</span> <span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;张三&quot;</span><span class="token punctuation">,</span>age<span class="token operator">:</span><span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>sex<span class="token operator">:</span><span class="token string">&quot;女&quot;</span><span class="token punctuation">}</span>
+ <span class="token keyword">const</span> p2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token operator">...</span>p1<span class="token punctuation">,</span>name <span class="token operator">:</span> <span class="token string">&quot;111&quot;</span><span class="token punctuation">,</span>hua<span class="token operator">:</span><span class="token string">&quot;ss&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+ p1<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;sss&quot;</span><span class="token punctuation">;</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>p2<span class="token punctuation">)</span>  <span class="token comment">//{name: &quot;111&quot;, age: &quot;18&quot;, sex: &quot;女&quot;,hua:&quot;ss&quot;}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>注意！！</strong> <strong>{...P}并不能展开一个对象</strong></p> <p><strong>props传递一个对象，是因为babel+react使得{..p}可以展开对象，但是只有在标签中才能使用</strong></p> <p><strong>对于props限制</strong></p> <p>很多时候都想要传递的参数进行相应的限制，比如：限制传递参数的类型，参数的默认值等等</p> <p>react对此提供了相应的解决方法：</p> <ul><li>propTypes:类型检查，还可以限制不能为空</li> <li>defaultProps：默认值</li></ul> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;script type=&quot;text/babel&quot;&gt;
+
+    
+    class Person extends React.Component{
+        render(){
+            //props是只读的
+            return (
+                &lt;ul&gt;
+                    &lt;li&gt;{this.props.name}&lt;/li&gt;
+                    &lt;li&gt;{this.props.age}&lt;/li&gt;
+                    &lt;li&gt;{this.props.sex}&lt;/li&gt;
+                &lt;/ul&gt;
+            )
+        }
+        //对组件的属性对其进行限制
+        static propTypes = {
+            name:PropTypes.string.isRequired, //限定name是string类型，并且必须要传递
+            sex:PropTypes.string,  //限定sex是string类型
+            speak:PropTypes.func   //限定speak是function类型
+        }
+        //指定默认的标签属性
+        static defaultProps = {
+            sex:&quot;不男不女&quot;,
+            age:18
+        }   
+        
+    }
+    //在js中可以使用{...p}来复制一个对象，但是这个地方并不是复制对象，而是babel+react通过展开运算符，展开了一个对象
+    //但是只能在标签中进行使用
+    //const p = {name:&quot;张三&quot;,age:&quot;18&quot;,sex:&quot;女&quot;}   {14}就代表的是数值
+    //ReactDOM.render(&lt;Person {...p}/&gt;,document.getElementById(&quot;div&quot;));
+    ReactDOM.render(&lt;Person name=&quot;sss&quot; age = {14} speak=&quot;8&quot;/&gt;,document.getElementById(&quot;div&quot;));
+    
+
+    function speak(){
+        console.log(&quot;这个是一个函数&quot;)
+    }
+
+&lt;/script&gt;
+&lt;/html&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><p><strong>函数式组件的使用</strong>：</p> <p>函数在使用props的时候，是作为参数进行使用的(props)；</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>function Person(props){
+          return (
+                &lt;ul&gt;
+                    &lt;li&gt;{props.name}&lt;/li&gt;
+                    &lt;li&gt;{props.age}&lt;/li&gt;
+                    &lt;li&gt;{props.sex}&lt;/li&gt;
+                &lt;/ul&gt;
+            )
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="refs"><a href="#refs" class="header-anchor">#</a> Refs</h2> <p>Refs 提供了一种方式，允许我们访问 DOM 节点或在 render 方法中创建的 React 元素。</p> <p>Refs主要提供了三种方式：</p> <p><strong>1.字符串形式</strong></p> <p>在想要获取到一个DOM节点，可以直接在这个节点上添加ref属性。利用该属性进行获取该节点的值。</p> <p>案例：给需要的节点添加ref属性，此时该实例对象的refs上就会有这个值。就可以利用实例对象的refs获取已经添加节点的值</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;input ref=&quot;dian&quot; type=&quot;text&quot; placeholder=&quot;点击弹出&quot; /&gt;
+
+ inputBlur = () =&gt;{
+            alert(this.refs.shiqu.value);
+        }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>2.回调形式</strong></p> <p>回调形式会在ref属性中添加一个回调函数。将该DOM作为参数传递过去。</p> <p>如：ref里面就是一个回调函数，self就是该input标签。然后在将该DOM元素赋值给实例对象中的一个属性</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;input ref={self =&gt;{ this.dian = self;console.log(self)}}  placeholder=&quot;点击弹出&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="data:image/png;base64,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" alt="input标签"></p> <p>也可以将函数提取出来，在ref中进行调用</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>isRef = (self) =&gt;{
+            this.dian = self;
+            console.log(self)
+        }
+
+&lt;input ref={this.isRef} type=&quot;text&quot; placeholder=&quot;点击弹出&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>3.API形式</strong></p> <p>React其实已经给我们提供了一个相应的API，他会自动的将该DOM元素放入实例对象中</p> <p>如下：依旧先在DOM元素中添加一个ref元素</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>{/*&lt;input ref={this.容器名称} type=&quot;text&quot; placeholder=&quot;点击弹出&quot; /&gt;*/}
+&lt;input ref={this.MyRef} type=&quot;text&quot; placeholder=&quot;点击弹出&quot; /&gt;
+&lt;input ref={this.MyRef1} type=&quot;text&quot; placeholder=&quot;点击弹出&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>通过API，创建React的容器，相当于省略了回调的中间环节。但是这个容器是专门专用的，所以每一个ref都需要创建这个。该API会将DOM元素赋值给实例对象的名称为容器名称的属性的current【这个current是固定的】</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>{/*容器名称 = React.createRef()*/}
+MyRef = React.createRef();
+MyRef1 = React.createRef();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="/assets/img/1611495597978.cdbcdbf8.png" alt="API"></p> <p>然后就可以使用了</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>btnOnClick = () =&gt;{
+    //创建之后，将自身节点，传入current中
+    console.log(this.MyRef.current.value);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>官方提示我们不要过度的使用ref，如果发生时间的元素刚好是需要操作的元素，就可以使用事件去替代。</strong></p> <h1 id="react事件"><a href="#react事件" class="header-anchor">#</a> React事件</h1> <p>React的事件是通过onXxx属性指定事件处理函数</p> <p>​        React使用的都是自定义的时间，而不是原生的事件</p> <p>​        React中的事件是通过事件委托方式处理的</p> <p>​		事件中必须返回的是函数</p> <p>​        通过event.target得到发生事件的Dom元素对象</p> <p>比如：</p> <p>先声明一个事件，然后在根据事件创建相应的函数，根据事件的event参数，将DOM元素获取到。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;input onChange={this.saveName} type = &quot;text&quot; name =&quot;username&quot;/&gt;
+
+saveName = (event) =&gt;{
+            this.setState({name:event.target.value});
+        }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>受控和非受控组件</strong></p> <p>先来说说受控组件：</p> <p>使 React 的 state 成为“唯一数据源”。渲染表单的 React 组件还控制着用户输入过程中表单发生的操作。被 React 以这种方式控制取值的表单输入元素就叫做“受控组件”。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>saveName = (event) =&gt;{
+    this.setState({name:event.target.value});
+}
+
+savePwd = (event) =&gt; {
+    this.setState({pwd:event.target.value});
+}
+
+render() {
+    return (
+        &lt;form action=&quot;http://www.baidu.com&quot; onSubmit={this.login}&gt;
+            用户名：&lt;input value={this.state.name} onChange={this.saveName} type = &quot;text&quot; /&gt;
+            密码&lt;input value={this.state.pwd} onChange={this.savePwd} type = &quot;password&quot;/&gt;
+            &lt;button&gt;登录&lt;/button&gt;
+        &lt;/form&gt;
+    )
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>由于在表单元素上设置了 <code>value</code> 属性，因此显示的值将始终为 <code>this.state.value</code>，这使得 React 的 state 成为唯一数据源。由于 <code>onchange</code> 在每次按键时都会执行并更新 React 的 state，因此显示的值将随着用户输入而更新。</p> <p>对于受控组件来说，输入的值始终由 React 的 state 驱动。</p> <p>非受控组件：</p> <p>非受控组件其实就是表单元素的值不会更新state。输入数据都是现用现取的。</p> <p>如下：下面并没有使用state来控制属性，使用的是事件来控制表单的属性值。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>class Login extends React.Component{
+
+    login = (event) =&gt;{
+        event.preventDefault(); //阻止表单提交
+            console.log(this.name.value);
+            console.log(this.pwd.value);
+        }
+        render() {
+            return (
+                &lt;form action=&quot;http://www.baidu.com&quot; onSubmit={this.login}&gt;
+                用户名：&lt;input ref = {self =&gt; this.name =self } type = &quot;text&quot; name =&quot;username&quot;/&gt;
+                密码：&lt;input ref = {self =&gt; this.pwd =self } type = &quot;password&quot; name =&quot;password&quot;/&gt;
+                &lt;button&gt;登录&lt;/button&gt;
+                &lt;/form&gt;
+            )
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p><strong>高级函数</strong></p> <p>1.如果函数的参数是函数</p> <p>2.如果函数返回一个函数</p> <p><strong>函数的珂里化</strong></p> <p>通过函数调用继续返回函数的方式，实现多次接收参数最后统一处理的函数编码形式</p> <p>如下，我们将上面的案例简化，创建高级函数：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code> class Login extends React.Component{
+ 
+        state = {name:&quot;&quot;,pwd:&quot;&quot;};
+		
+		//返回一个函数
+        saveType = (type) =&gt;{
+            return (event) =&gt; {
+                this.setState({[type]:event.target.value});
+            }
+        }
+
+        //因为事件中必须是一个函数，所以返回的也是一个函数，这样就符合规范了
+        render() {
+            return (
+                &lt;form&gt;
+      				&lt;input onChange = {this.saveType('name')} type = &quot;text&quot;/&gt;
+                    &lt;button&gt;登录&lt;/button&gt;
+                &lt;/form&gt;
+            )
+        }
+    }
+
+    ReactDOM.render(&lt;Login /&gt;,document.getElementById(&quot;div&quot;));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h1 id="生命周期"><a href="#生命周期" class="header-anchor">#</a> 生命周期</h1> <h2 id="旧"><a href="#旧" class="header-anchor">#</a> （旧）</h2> <p>组件从创建到死亡，会经过一些特定的阶段</p> <p>​      React组件中包含一系列钩子函数{生命周期回调函数}，会在特定的时刻调用</p> <p>​      我们在定义组件的时候，会在特定的声明周期回调函数中，做特定的工作</p> <p>如下图是旧生命周期的结构图：</p> <p><img src="/assets/img/1611490156766.c4c5390f.png" alt="旧生命周期"></p> <p>我们通过一个案例更详细的了解这个生命周期：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code> class A extends React.Component{
+
+        constructor(props){
+            console.log(&quot;A --- constructor&quot;)
+            super(props);
+            this.state = {num:1}
+        }
+
+        add = () =&gt; {
+            let {num} = this.state;
+            this.setState({num:num+1});
+            //强制更新
+            //this.forceUpdate();
+        }
+
+       render(){
+           console.log(&quot;A --- render&quot;);
+            return (
+                &lt;div&gt;
+                    &lt;h1&gt;这个是第{this.state.num}个&lt;/h1&gt;
+                    &lt;B name = {this.state.num}/&gt;
+                    &lt;button onClick = {this.add}&gt;点击加一&lt;/button&gt;
+                &lt;/div&gt;
+            )
+       }
+
+       //在render之前执行
+       componentWillMount(){
+            console.log(&quot;A --- componentWillMount&quot;);
+       }
+
+       //在render之后执行
+       componentDidMount(){
+        console.log(&quot;A --- componenetDidMount&quot;);
+       }
+
+       //更新操作 setState之后执行，判断是否可以更新（true可以，false不可以）
+       shouldComponentUpdate(){
+            console.log(&quot;A --- shouldComponentUpdate&quot;);
+            return true;
+       }
+       // 组件将要更新之前
+       componentWillUpdate(){
+            console.log(&quot;A --- componentWillUpdate&quot;);
+       }
+       //组件更新之后，该函数可以接受相应的参数
+       componentDidUpdate(){
+            console.log(&quot;A --- componentDidUpdate&quot;);
+       }
+
+       //卸载组件之后
+       componentWillUnmonut(){
+            console.log(&quot;A --- componentWillUnmonut&quot;);
+       }
+     
+   }
+   class B extends React.Component{
+       render(){
+           return(   
+                &lt;div&gt;
+                    &lt;h1&gt;这个是B组件,传递过来的是：{this.props.name}&lt;/h1&gt;
+                &lt;/div&gt;
+           )
+       }
+       //父组件进行了更新，子组件先执行这个【注意，第一次传递数据的时候，并不执行】
+       componentWillReceiveProps(){
+        console.log(&quot;A --- componentWillReceiveProps&quot;);
+       }
+   }
+    ReactDOM.render(&lt;A   /&gt;,document.getElementById(&quot;div&quot;));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br></div></div><p>我们在控制台看一下：</p> <p>当我们刚刚打开控制台的时候，组件第一次加载：</p> <p><img src="data:image/png;base64,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" alt="组件第一次加载"></p> <p>当我们点击按钮更新sate的时候：</p> <p><img src="/assets/img/1611568250881.b16c95e3.png" alt="更新state"></p> <h2 id="新"><a href="#新" class="header-anchor">#</a> （新）</h2> <p>在最新的react版本中，有些生命周期钩子被抛弃了，在官网中是这样说的：</p> <p>我们得到最重要的经验是，过时的组件生命周期往往会带来不安全的编码实践，具体函数如下：</p> <ul><li><code>componentWillMount</code></li> <li><code>componentWillReceiveProps</code></li> <li><code>componentWillUpdate</code></li></ul> <p>这些生命周期方法经常被误解和滥用；此外，我们预计，在异步渲染中，它们潜在的误用问题可能更大。我们将在即将发布的版本中为这些生命周期添加 “UNSAFE_” 前缀。（这里的 “unsafe” 不是指安全性，而是表示使用这些生命周期的代码在 React 的未来版本中更有可能出现 bug，尤其是在启用异步渲染之后。）</p> <p>由此可见，新版本中并不推荐持有这三个函数，取而代之的是带有UNSAFE_ 前缀的三个函数，比如: UNSAFE_ componentWillMount。即便如此，其实React官方还是不推荐大家去使用，在以后版本中有可能会去除这几个函数。</p> <p>如下图是新的生命周期：</p> <p><img src="/assets/img/1611651795885.1c802cf2.png" alt="新生命周期"></p> <p>从图上可以看出，新生命周期和旧生命周期的区别主要有：</p> <p>1.抛弃了上面所说的三个钩子函数【其实还可以使用】</p> <p>2.新添加了两个钩子函数</p> <p>现在重点说一下，新添加的钩子函数</p> <p><strong>static getDerivedStateFromProps(props, state)</strong></p> <p>首先，该函数会调用 render 方法之前调用，并且在初始挂载及后续更新时都会被调用；该函数必须是静态的；给组件传递的数据（props）以及组件状态（state），会作为参数到这个函数中；该函数也必须有返回值，返回一个Null或者state对象。因为初始化和后续更新都会执行这个方法，因此在这个方法返回state对象，就相当于将原来的state进行了覆盖，所以倒是修改状态不起作用。</p> <p><strong>getSnapshotBeforeUpdate(prevProps, prevState)</strong></p> <p><code>getSnapshotBeforeUpdate()</code> 在最近一次渲染输出（提交到 DOM 节点）之前调用。它使得组件能在发生更改之前从 DOM 中捕获一些信息（例如，滚动位置）。此生命周期的任何返回值将作为参数传递<code>componentDidUpdate()</code>。</p> <blockquote><p>补充一下：componentDidUpdate(prevProps, prevState, snapshot)</p> <p>该生命周期函数，可以有三个参数：原始传过来的参数，最开始的状态，getSnapshotBeforeUpdate传递的值</p> <p>关于更多关于生命周期的介绍，可以参考官方文档：</p> <p>https://zh-hans.reactjs.org/docs/react-component.html#render</p></blockquote> <p>以上就是两个新添加的钩子函数，但是在现实开发中可能并不常用这两个。</p> <p>**案例：在一个区域内，定时的输出以行话，如果内容大小超过了区域大小，就出现滚动条，但是内容不进行移动 **</p> <p><img src="data:image/gif;base64,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" alt="案例"></p> <p>如上面的动图：区域内部的内容展现没有变化，但是可以看见滚动条在变化，也就是说上面依旧有内容在输出，只不过不在这个区域内部展现。</p> <p><strong>实现：</strong></p> <p>【一些css样式，就不在这展示了】</p> <p>1.首先我们先实现定时输出内容</p> <p>我们可以使用state状态，改变新闻后面的值，但是为了同时显示这些内容，我们应该为state的属性定义一个数组。并在创建组件之后开启一个定时器，不断的进行更新state。更新渲染组件</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code> class New extends React.Component{
+
+        state = {num:[]};
+
+        //在组件创建之后,开启一个定时任务
+        componentDidMount(){
+            setInterval(()=&gt;{
+                let {num} = this.state;
+                const news = (num.length+1);
+                this.setState({num:[news,...num]});
+            },2000);
+        }
+
+        render(){
+            return (
+
+                &lt;div ref = &quot;list&quot; className = &quot;list&quot;&gt;{
+                    this.state.num.map((n,index)=&gt;{
+                    return &lt;div className=&quot;news&quot; key={index} &gt;新闻{n}&lt;/div&gt;
+                    })
+                }&lt;/div&gt;
+            )
+        }
+  }
+  ReactDOM.render(&lt;New /&gt;,document.getElementById(&quot;div&quot;));
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>2.接下来就是控制滚动条了</p> <p>我们在组件渲染到DOM之前获取组件的高度，然后用组件渲染之后的高度减去之前的高度就是一条新的内容的高度，这样在不断的累加到滚动条位置上。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>getSnapshotBeforeUpdate(){
+	return this.refs.list.scrollHeight;
+}
+
+componentDidUpdate(preProps,preState,height){
+	this.refs.list.scrollTop += (this.refs.list.scrollHeight - height);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这样就实现了这个功能。</p> <h1 id="diff算法"><a href="#diff算法" class="header-anchor">#</a> Diff算法</h1> <p>提到这个算法，就必须说一下关于Key的事情了。</p> <p>其实每个组件中的每个标签都会有一个key,只不过有的必须显示的指定，有的可以隐藏。</p> <p>如果生成的render出来后就不会改变里面的内容，那么你不需要指定key（不指定key时，React也会生成一个默认的标识）,或者将index作为key，只要key不重复即可。</p> <p>但是如果你的标签是动态的，是有可能刷新的，就必须显示的指定key。必须上面案使用map进行便利的时候就必须指定Key:</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>this.state.num.map((n,index)=&gt;{
+	return &lt;div className=&quot;news&quot; key={index} &gt;新闻{n}&lt;/div&gt;
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这个地方虽然显示的指定了key，但是<strong>官网并不推荐使用Index作为Key去使用</strong>；</p> <p>这样会很有可能会有效率上的问题</p> <p>举个例子：</p> <p>在一个组件中，我们先创建了两个对象，通过循环的方式放入&lt; li&gt;标签中，此时key使用的是index。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>person:[
+    {id:1,name:&quot;张三&quot;,age:18},
+    {id:2,name:&quot;李四&quot;,age:19}
+]
+
+this.state.person.map((preson,index)=&gt;{
+  return  &lt;li key = {index}&gt;{preson.name}&lt;/li&gt;
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>如下图展现在页面中：</p> <p><img src="data:image/png;base64,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" alt="原始对象数组"></p> <p>此时，我们想在点击按钮之后动态的添加一个对象，并且放入到li标签中，在重新渲染到页面中。</p> <p>我们通过修改State来控制对象的添加。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;button onClick={this.addObject}&gt;点击增加对象&lt;/button&gt;
+addObject = () =&gt;{
+    let {person} = this.state;
+    const p = {id:(person.length+1),name:&quot;王五&quot;,age:20};
+    this.setState({person:[p,...person]});
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>如下动图所示：</p> <p><img src="/assets/img/addObject.4b9de957.gif" alt="原始对象数组"></p> <p>这样看，虽然完成了功能。但是其实存在效率上的问题，	我们先来看一下两个前后组件状态的变化：</p> <p><img src="/assets/img/1611800988496.c0fb6ac0.png" alt="组件状态的变化"></p> <p>我们发现，组件第一个变成了王五，张三和李四都移下去了。因为我们使用Index作为Key，这三个标签的key也就发生了改变【张三原本的key是0，现在变成了1，李四的key原本是1，现在变成了2，王五变成了0】在组件更新状态重新渲染的时候，就出现了问题：</p> <p>因为react是通过key来比较组件标签是否一致的，拿这个案例来说：</p> <p>首先，状态更新导致组件标签更新，react根据Key，判断旧的虚拟DOM和新的虚拟DOM是否一致</p> <p>key = 0 的时候 旧的虚拟DOM 内容是张三  新的虚拟DOM为王五 ，react认为内容改变，从而重新创建新的真实DOM.</p> <p>key = 1 的时候 旧的虚拟DOM 内容是李四，新的虚拟DOM为张三，react认为内容改变，从而重新创建新的真实DOM</p> <p>key = 2 的时候 旧的虚拟DOM没有，创建新的真实DOM</p> <p>这样原本有两个虚拟DOM可以复用，但都没有进行复用，完完全全的都是新创建的；这就导致效率极大的降低。</p> <p>其实这是因为我们将新创建的对象放在了首位，如果放在最后其实是没有问题的，但是因为官方并不推荐使用Index作为key值，我们推荐使用id作为key值。从而完全避免这样的情况。</p> <p><strong>用index作为key可能会引发的问题:</strong></p> <p>1。若对数据进行:逆序添加、逆序删除等破坏顺序操作:</p> <p>​		会产生没有必要的真实DOM更新  界面效果没问题,但效率低。</p> <p>2．如果结构中还包含输入类的DOM:</p> <p>​        会产生错误DOM更新   界面有问题。</p> <p>3，注意! 如果不存在对数据的逆序添加、逆序删除等破坏顺序操作，仅用于渲染列表用于展示，使用index作为key是没有问题的。</p> <p><strong>开发如何选择key?</strong></p> <p>最好使用每一条数据的唯一标识作为key 比如id，手机号，身份证号</p> <p>如果确定只是简单的展示数据，用Index也是可以的</p> <p><strong>而这个判断key的比较规则就是Diff算法</strong></p> <p>Diff算法其实就是react生成的新虚拟DOM和以前的旧虚拟DOM的比较规则：</p> <ul><li><p>如果旧的虚拟DOM中找到了与新虚拟DOM相同的key:</p> <ul><li>如果内容没有变化，就直接只用之前旧的真实DOM</li> <li>如果内容发生了变化，就生成新的真实DOM</li></ul></li> <li><p>如果旧的虚拟DOM中没有找到了与新虚拟DOM相同的key:</p> <ul><li>根据数据创建新的真实的DOM,随后渲染到页面上</li></ul></li></ul> <h1 id="react脚手架"><a href="#react脚手架" class="header-anchor">#</a> React脚手架</h1> <p>react提供了一个用于创建react项目的脚手架库：create-react-app</p> <h2 id="创建项目并启动"><a href="#创建项目并启动" class="header-anchor">#</a> 创建项目并启动</h2> <p>1.全局安装：npm i -g create-react-app</p> <p>2.创建项目：create-react-app 项目名</p> <p>在这一步，有可能会出现：</p> <p><img src="/assets/img/1611803687193.a739a6b2.png" alt="不是内部命令"></p> <p>这样可以直接使用：npx create-react-app 项目名</p> <p>3.等待下载完成，进入项目文件夹，运行一下</p> <p>比如，我这的项目名称是hello,就先进入hello文件夹</p> <p>cd hello</p> <p>npm start   //启动这个项目</p> <p><img src="/assets/img/1611816095069.8da48959.png" alt="启动成功"></p> <p>这个时会自动的打开浏览器，展现这个项目：</p> <p><img src="/assets/img/1611816150630.92c2745b.png" alt="第一个脚手架项目"></p> <h2 id="项目的目录结构"><a href="#项目的目录结构" class="header-anchor">#</a> 项目的目录结构</h2> <p>我们先来看一下public这个目录下面的结构：</p> <p><img src="/assets/img/1611817630266.5764461e.png" alt="public"></p> <p>这里面最主要的还是这个Index.html文件：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;!--%PUBLIC_URL%表示public文件夹的路径--&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;%PUBLIC_URL%/favicon.ico&quot; /&gt;
+    &lt;!--用于开启理想视口，用于移动端页面的适配--&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+    &lt;!--用于配置浏览器地址栏的颜色（仅支持安卓手机浏览器）--&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot; /&gt;
+    &lt;!--描述网页信息的--&gt;
+    &lt;meta
+      name=&quot;description&quot;
+      content=&quot;Web site created using create-react-app&quot;
+    /&gt;
+    &lt;!--用于指定网页添加到手机主屏幕后的图标（仅仅支持ios）--&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;%PUBLIC_URL%/logo192.png&quot; /&gt;
+ 
+    &lt;!--应用加壳时候的配置文件 --&gt;
+    &lt;link rel=&quot;manifest&quot; href=&quot;%PUBLIC_URL%/manifest.json&quot; /&gt;
+  
+    &lt;title&gt;React App&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- 浏览器不支持JS的运行的时候展现 --&gt;
+    &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>src文件：</p> <p><img src="/assets/img/1611818262317.37080690.png" alt="src文件"></p> <p>这里面其实最主要的就是App.js以及index.js，一个是组件，一个是将组件渲染到页面中的。</p> <h2 id="第一个脚手架应用"><a href="#第一个脚手架应用" class="header-anchor">#</a> 第一个脚手架应用</h2> <p>1.我们保持public中的Index.html不变</p> <p>2.修改src下面的APP.js以及index.js文件</p> <p>App.js:  【注意：创建好的组件一定要暴露出去】</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//创建外壳组件APP
+import React from 'react'
+
+class App extends React.Component{
+    render(){
+        return (
+            &lt;div&gt;Hello word&lt;/div&gt;
+        )
+    }
+}
+
+export default App
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>index.js: 【主要的作用其实就是将App这个组件渲染到页面上】</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//引入核心库
+import React from 'react'
+import ReactDOM from 'react-dom'
+//引入组件
+import App from './App'
+
+ReactDOM.render(&lt;App /&gt;,document.getElementById(&quot;root&quot;))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这样在重新启动应用，就成功了。</p> <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAABBCAYAAACw/mROAAAELElEQVR4nO2cMZKjOhRFL1OzCDvzMuyMHcihnU04SzArkJfww59B2OyAzCyDpAs2MPWDH2gCISMj4cY9U+5n+54qEgkeT+rTQk9d1cn7+7sBIYL49tUJEDKGUhJxUEoiDkpJxEEpiTgoJREHpSTioJREHJSSiOP7r//+/+ocCLmAKyURR2KM4d++iSi4UhJxUEoiDkpJxEEpiTgoJREHpSTioJREHJSSiINSEnFQSiIOSknEQSmJOCglEQelJOIQK2VXbJEkCbZF57XWOCYJkuSI+ssyk0N8jh6fG6XspdgWuDYNzzpZ5D6IXSnJ60IpiTgoJRHHl0hZHxMkiXd9sEedi9vL+tfcfa3L6RhUUNPFlXvf9DP+FSvOOhTbBEmyRdH5+Y/vDeOF73we7iylndxNNmou91j+UUVt4y73ZdBT7pezqvV1qgEAWTW6s65g080w7mqaEoDCajW0WbE2GA8RyLC59ktSHaP5oyuwjcTLNgl+FlcG9MiYmzgZDRjMvFTeXj6tr7dDn85tba4i97r3a+PdaXLl3um3j/LVlz3TY7uMcdIwUMqoqVxUbtrh5smxu/EAygxdfu4wYYrT+Z/nLPKuR+d+Ura5UZNyhD/g2VK6uIGQM/v96HpCGn3q5fQE7OP6+U390k33D1JGn3GS+++9Gu85+NznW+VordDRq81V8EhXFSgBINsE+77z565s0NyYiour8h9Yx25YpNgpAKjRfLC9XK0UgBJF1bngKEpAp2vbVxYYugqUUNili/7pGlUGABqH3SIMjmGLUDbjUfpxvLE1dr+gDzvEItp8n48XqL4XWEVtjdyZ7qAwSGPF00jXrs8J26EqSgBrrOL+xVmtcItGds/6etxdSpW3kyusMYf4avdHdGjmVlBuVc0q1E48ndqc+j4rbIOmxNA3l6bBa2p2G3eTctEvV2VR/ZXjn3Nct7rt/41X2P0neN6qtkBqrURVW/HUubTuV9ysQt1X5Dr1lVzDfp0zHCcq7Np+372Y13Gf5+BEwA6sX62fj/utlOsfyK09WAbnkva87lNnb+c9Y4ZN7Hxvub++5wzCWcnr4xHZaK9n94Q1qqoG+s+6z3nPuF8GRz9dse2Pwqb3nFO5INsguZicDsV2idgJ0lNwW10UOQaJEK+cjVcJxy+/MJ9/JOS3T1wfHgdNxBqP089/Yg6Go5/Y5Vf2xgzV97h9XjylJub5wbnvnnKxw5tpERbnCnlrcPj0hnKNgzE46bBHnwzMTYHdZxhQu/Sy6j2vypE+d8vuDabNw4JG5WjNG2YukpfxgoFpnIzBP7vbYj0K/FeARBwvcCREHg1KScRBKYk4KCURB6Uk4qCURByUkoiDUhJxUEoiDkpJxEEpiTgoJREHpSTioJREHJSSiINSEnFQSiIOSknEQSmJOCglEQelJOL4DeksgidA/Hd/AAAAAElFTkSuQmCC" alt="第一个脚手架应用"></p> <p>我们也不建议这样直接将内容放入App组件中，尽量还是用内部组件。</p> <p>我们在顶一个Hello组件：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React,{Componet} from 'react'
+
+export default class Hello extends Componet{
+    render() {
+        return (
+            &lt;h1&gt;Hello&lt;/h1&gt;
+        )
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>在App组件中，进行使用</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>class App extends Component{
+    render(){
+        return (
+            &lt;div&gt;
+                &lt;Hello /&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>这样的结果和前面是一样的。</p> <p>但是由于普通的Js和组件都是js，所一最好组件使用jsx去展示。</p> <h2 id="样式冲突"><a href="#样式冲突" class="header-anchor">#</a> 样式冲突</h2> <p>当组件逐渐增多起来的时候，我们发现，组件的样式也是越来越丰富，这样就很有可能产生两个组件中样式名称有可能会冲突，这样会根据引入App这个组件的先后顺序，后面的会覆盖前面的，</p> <p>为了避免这样的样式冲突，我们采用下面的形式：</p> <p>1.将css文件名修改： hello.css --- &gt;hello.module.css</p> <p>2.引入并使用的时候改变方式：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React,{Component}from 'react'
+import hello from './hello.module.css'  //引入的时候给一个名称
+
+export default class Hello extends Component{
+    render() {
+        return (
+            &lt;h1 className={hello.title}&gt;Hello&lt;/h1&gt;   //通过大括号进行调用
+        )
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h1 id="功能界面的组件化编码流程"><a href="#功能界面的组件化编码流程" class="header-anchor">#</a> 功能界面的组件化编码流程</h1> <p>1.拆分组件:拆分界面，抽取组件</p> <p>2.实现静态组件</p> <p>3.实现动态组件</p> <ul><li>动态的显示初始化数据
+<ul><li>数据类型</li> <li>数据名称</li> <li>保存在哪个组件</li></ul></li> <li>交互</li></ul> <p><strong>注意事项：</strong></p> <p>1.拆分组件、实现静态组件。注意className、style的写法</p> <p>2.动态初始化列表，如何确定将数据放在哪个组件的state中？</p> <ul><li>某个组件使用：放在自身的state中</li> <li>某些组件使用：放在他们共同的父组件中【状态提升】</li></ul> <p>3.关于父子组件之间的通信</p> <ul><li>父组件给子组件传递数据：通过props传递</li> <li>子组件给父组件传递数据：通过props传递，要求父组件提前给子组件传递一个函数</li></ul> <p>4.注意defaultChecked 和checked区别，defalutChecked只是在初始化的时候执行一次，checked没有这个限制，但是必须添加onChange方法类似的还有：defaultValue 和value</p> <p>5.状态在哪里，操作状态的方法就在哪里</p> <h1 id="react-ajax"><a href="#react-ajax" class="header-anchor">#</a> react ajax</h1> <p>React本身只关注与页面，并不包含发送ajax请求的代码，所以一般都是集成第三方的一些库，或者自己进行封装。</p> <p>推荐使用axios。</p> <p>在使用的过程中很有可能会出现跨域的问题，这样就应该配置代理。</p> <p>所谓同源（即指在同一个域）就是两个页面具有相同的协议（protocol），主机（host）和端口号（port）， 当一个请求url的<strong>协议、域名、端口</strong>三者之间任意一个与当前页面url不同即为跨域  。</p> <p>那么react通过代理解决跨域问题呢</p> <p><strong>方法一</strong></p> <blockquote><p>在package.json中追加如下配置</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token property">&quot;proxy&quot;</span><span class="token operator">:</span><span class="token string">&quot;请求的地址&quot;</span>      <span class="token property">&quot;proxy&quot;</span><span class="token operator">:</span><span class="token string">&quot;http://localhost:5000&quot;</span>  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>说明：</p> <ol><li>优点：配置简单，前端请求资源时可以不加任何前缀。</li> <li>缺点：不能配置多个代理。</li> <li>工作方式：上述方式配置代理，当请求了3000不存在的资源时，那么该请求会转发给5000 （优先匹配前端资源）</li></ol> <p><strong>方法二</strong></p> <ol><li><p>第一步：创建代理配置文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>在src下创建配置文件：src/setupProxy.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>编写setupProxy.js配置具体代理规则：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> proxy <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http-proxy-middleware'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+    <span class="token function">proxy</span><span class="token punctuation">(</span><span class="token string">'/api1'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>  <span class="token comment">//api1是需要转发的请求(所有带有/api1前缀的请求都会转发给5000)</span>
+      target<span class="token operator">:</span> <span class="token string">'http://localhost:5000'</span><span class="token punctuation">,</span> <span class="token comment">//配置转发目标地址(能返回数据的服务器地址)</span>
+      changeOrigin<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//控制服务器接收到的请求头中host字段的值</span>
+      <span class="token comment">/*
+      	changeOrigin设置为true时，服务器收到的请求头中的host为：localhost:5000
+      	changeOrigin设置为false时，服务器收到的请求头中的host为：localhost:3000
+      	changeOrigin默认值为false，但我们一般将changeOrigin值设为true
+      */</span>
+      pathRewrite<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">'^/api1'</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">}</span> <span class="token comment">//去除请求前缀，保证交给后台服务器的是正常请求地址(必须配置)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">proxy</span><span class="token punctuation">(</span><span class="token string">'/api2'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> 
+      target<span class="token operator">:</span> <span class="token string">'http://localhost:5001'</span><span class="token punctuation">,</span>
+      changeOrigin<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      pathRewrite<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">'^/api2'</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div></li></ol> <p>说明：</p> <ol><li>优点：可以配置多个代理，可以灵活的控制请求是否走代理。</li> <li>缺点：配置繁琐，前端请求资源时必须加前缀。</li></ol> <h1 id="兄弟之间进行通信"><a href="#兄弟之间进行通信" class="header-anchor">#</a> 兄弟之间进行通信</h1> <p>这就要借助消息订阅和发布机制。</p> <p>举个例子来说就是张三想要跟李四进行通信，张三就需要订阅一个消息【比如A消息】，李四想要给张三数据，就必须发布一个A消息，在发布的同时将数据放入消息中，因为张三订阅了名称为A的消息，此时就能接受到李四发布的消息，从而获取到数据。</p> <p>这就有点类似于看报纸，甲想要知道每天都发生什么事情，于是订阅了每天日报，乙每天都会发布这个每天日报，因为甲订阅了，于是乙就会每天就给甲方推送，甲方从而获取数据。</p> <p><strong>在消息订阅和发布中，我们可以使用PubSubJs进行通信：</strong></p> <p>引入PubSubJs:</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import PubSub from 'pubsub-js'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>订阅消息：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>PubSub.subscribe(&quot;getSate&quot;,(_,data)=&gt;{
+            console.log(data)
+        })
+PubSub.subscribe(&quot;订阅的消息名称&quot;,回调函数，第一个参数是消息名称，可以使用_来占位，第二个是传递的数据
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>发布消息：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>PubSub.publish(&quot;getSate&quot;,{isFrist:false,isLoad:true})
+PubSub.publish(&quot;订阅的消息名称&quot;,传递的数据)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h1 id="async和await"><a href="#async和await" class="header-anchor">#</a> async和await</h1> <p><strong>async:</strong></p> <p>该关键字是放在函数之前的，使得函数成为一个异步函数，他最大的特点就是将函数回封装成Promise，也就是被他修饰的函数的返回值都是Promise对象。而这个Promise对象的状态则是由函数执行的返回值决定的。</p> <p>如果返回的是一个非promise对象，该函数将返回一个成功的Promise，成功的值则是返回的值；</p> <p>如果返回的是一个promise对象，则该函数返回的就是该promise对应的状态。</p> <p><strong>await</strong></p> <p>await右边是一个表达式，如果该表达式返回的是一个Promise对象，则左边接收的结果就是该Promise对象成功的结果，如果该Promise对象失败了，就必须使用try..catch来捕获。如果该表达式返回的是是一个不是promise对象，则左边接受的就是该表达式的返回值。</p> <p>当 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" target="_blank" rel="noopener noreferrer">await<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 关键字与异步函数一起使用时，它的真正优势就变得明显了 —— 事实上， <strong>await 只在异步函数里面才起作用</strong>。它可以放在任何异步的，基于 promise 的函数之前。它会暂停代码在该行上，直到 promise 完成，然后返回结果值。在暂停的同时，其他正在等待执行的代码就有机会执行了。</p> <p>举个例子：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code> f1 = () =&gt;{
+        return new Promise((resolve,reject)=&gt;{
+            // resolve(1);
+            reject(&quot;错误&quot;)
+        })
+    }
+
+    async function test(){
+        try{
+           const p =  await f1();
+           console.log(p)
+        }catch(error){
+            console.error(error)
+        }
+    }
+    test();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h1 id="fetch"><a href="#fetch" class="header-anchor">#</a> fetch</h1> <p>以前发送请求，使用ajax或者axios，现在还可以使用fetch。这个是window自带的，和xhr是一个级别的。</p> <p>可以查看这个文章，写的真的不错：</p> <p><a href="http://www.ruanyifeng.com/blog/2020/12/fetch-tutorial.html" target="_blank" rel="noopener noreferrer">fetch<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h1 id="react路由"><a href="#react路由" class="header-anchor">#</a> React路由</h1> <h2 id="spa"><a href="#spa" class="header-anchor">#</a> SPA</h2> <p>单页Web应用(single page web application，SPA)。整个应用只有一个完整的页面。</p> <p>点击页面中的链接不会刷新页面，只会做页面的局部更新。</p> <p>数据都需要通过ajax请求获取,并在前端异步展现</p> <h2 id="什么是路由"><a href="#什么是路由" class="header-anchor">#</a> 什么是路由</h2> <p>一个路由其实就是一个映射关系（k:v）</p> <p>key为路径，value可能是function 或者是 component</p> <p><strong>后端路由：</strong></p> <p>value是function，用来处理客户端提交的请求</p> <p>注册路由：router.get(path,function(req,res))</p> <p>工作过程：当node接收一个请求的时候，根据请求路径找到匹配的路由，调用路由中的函数来处理请求，返回响应的数据</p> <p><strong>前端路由：</strong></p> <p>浏览器端路由，value是Component，用于展示页面内容</p> <p>注册路由：&lt; Route path=&quot;/test&quot; component={Test}&gt;</p> <p>工作过程：当浏览器的path变为/test的时候，当前路由组件就会变成Test组件</p> <p><strong>前端路由的原理</strong></p> <p>这个主要是依靠于history，也就是浏览器的历史记录。</p> <p>浏览器上的记录其实就是一个栈，前进一次就是入栈，后退一次就是出栈。</p> <p>并且历史记录上有一个监听的方法，可以时时刻刻监听记录的变化。从而判断是否改变路径</p> <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/History" target="_blank" rel="noopener noreferrer">History<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="react-router-dom"><a href="#react-router-dom" class="header-anchor">#</a> react-router-dom</h2> <p>react的路由有三类：</p> <p>web【主要适用于前端】,native【主要适用于本地】,anywhere【任何地方】</p> <p>在这主要使用web也就是这个标题 react-router-dom</p> <p><strong>基本的使用：</strong></p> <p>导航中的a标签改写成Link标签</p> <p>&lt; Link to=&quot;/路径&quot; &gt;xxx&lt; /Link&gt;</p> <p>展示区写Route标签进行路径的匹配</p> <p>&lt; Route path = '/路径' component={组件名称}&gt;</p> <p>&lt; App&gt;最外侧包裹了一个&lt; BrowserRouter&gt;或者&lt; HashRouter&gt;</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;div className=&quot;list-group&quot;&gt;
+    &lt;Link className=&quot;list-group-item&quot;  to=&quot;/about&quot;&gt;About&lt;/Link&gt;
+    &lt;Link className=&quot;list-group-item&quot;  to=&quot;/home&quot;&gt;Home&lt;/Link&gt;
+&lt;/div&gt;
+
+&lt;div className=&quot;panel-body&quot;&gt;
+    {/* 注册路由，也就是写对应的关系 */}
+    &lt;Route path=&quot;/about&quot;component={About}/&gt;
+    &lt;Route path=&quot;/home&quot;component={Home}/&gt;
+&lt;/div&gt;
+
+index.js:
+ReactDOM.render(
+    &lt;BrowserRouter&gt;
+        &lt;App /&gt;
+    &lt;/BrowserRouter&gt;
+    ,document.getElementById(&quot;root&quot;))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>那么使用Link代替a标签之后，在页面上会是什么呢，我们发现其实页面上也是把link转化为了a标签</p> <p><strong>路由组件以及一般组件</strong></p> <p>1.写法不一样</p> <p>一般组件：&lt; Demo&gt;</p> <p>路由组件：&lt; Route path=&quot;/demo&quot; component ={Demo}/&gt;</p> <p>2.存放的位置一般不同</p> <p>一般组件：components</p> <p>路由组件：pages</p> <p>3.接收的内容【props】</p> <p>一般组件：写组件标签的时候传递什么，就能收到什么</p> <p>路由组件：接收到三个固定的属性【history,location,match】</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>history<span class="token operator">:</span>
+    go<span class="token operator">:</span> ƒ <span class="token function">go</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+    goBack<span class="token operator">:</span> ƒ <span class="token function">goBack</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    goForward<span class="token operator">:</span> ƒ <span class="token function">goForward</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    push<span class="token operator">:</span> ƒ <span class="token function">push</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> state<span class="token punctuation">)</span>
+    replace<span class="token operator">:</span> ƒ <span class="token function">replace</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> state<span class="token punctuation">)</span>
+location<span class="token operator">:</span>
+    pathname<span class="token operator">:</span> <span class="token string">&quot;/about&quot;</span>
+    search<span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    state<span class="token operator">:</span> <span class="token keyword">undefined</span>
+
+match<span class="token operator">:</span>
+    params<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/about&quot;</span>
+    url<span class="token operator">:</span> <span class="token string">&quot;/about&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><strong>NavLink</strong></p> <p>因为Link不能够改变标签体，因此只适合用于一些写死的标签。而如果想要有一些点击的效果，使用NavLink.</p> <p>如下代码，就写了ctiveClassName，当点击的时候就会触发这个class的样式</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>{/*NavLink在点击的时候就会去找activeClassName=&quot;ss&quot;所指定的class的值，如果不添加默认是active
+ 这是因为Link相当于是把标签写死了，不能去改变什么。*/}
+
+&lt;NavLink  ctiveClassName=&quot;ss&quot; className=&quot;list-group-item&quot;  to=&quot;/about&quot;&gt;About&lt;/NavLink&gt;
+&lt;NavLink className=&quot;list-group-item&quot;  to=&quot;/home&quot;&gt;Home&lt;/NavLink&gt; 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>但是可能一个导航又很多标签，如果这样重复的写NavLink也会造成很多的重复性的代码问题。</p> <p>因此可以自定义一个NavLink：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code> // 通过{...对象}的形式解析对象，相当于将对象中的属性全部展开
+ //&lt;NavLink  to = {this.props.to} children = {this.props.children}/&gt;
+&lt;NavLink className=&quot;list-group-item&quot; {...this.props}/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>​	在使用的时候：直接写每个标签中不一样的部分就行，比如路径和名称</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>{/*将NavLink进行封装，成为MyNavLink,通过props进行传参数，标签体内容props是特殊的一个属性，叫做children */}
+&lt;MyNavLink to = &quot;/about&quot; &gt;About&lt;/MyNavLink&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="样式错误"><a href="#样式错误" class="header-anchor">#</a> 样式错误</h2> <p>拿上面的案例来说：</p> <p>这里面会有一个样式：</p> <p><img src="data:image/png;base64,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" alt="样式表"></p> <p>此时，加载该样式的路径为：</p> <p><img src="/assets/img/1612317786643.246024d8.png" alt="加载样式路径"></p> <p>但是在写路由的时候，有的时候就会出现多级目录，</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;MyNavLink to = &quot;/cyk/about&quot; &gt;About&lt;/MyNavLink&gt;
+
+&lt;Route path=&quot;/cyk/about&quot;component={About}/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这个时候就在刷新页面，就会出现问题：</p> <p>样式因为路径问题加载失败，此时页面返回public下面的Index.html</p> <p><img src="/assets/img/1612317880916.ead6609e.png" alt="加载页面失败"></p> <p>解决这个问题，有三个方法：</p> <p>1.样式加载使用绝对位置</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code> &lt;link href=&quot;/css/bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt; 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>2.使用 %PUBLIC_URL%</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> &lt;link href=&quot;%PUBLIC_URL%/css/bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>3.使用HashRouter</p> <p>因为HashRouter会添加#，默认不会处理#后面的路径，所以也是可以解决的</p> <h2 id="模糊匹配和精准匹配"><a href="#模糊匹配和精准匹配" class="header-anchor">#</a> 模糊匹配和精准匹配</h2> <p>react默认是开启模糊匹配的。</p> <p>比如：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;MyNavLink to = &quot;/home/a/b&quot; &gt;Home&lt;/MyNavLink&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>此时该标签匹配的路由，分为三个部分 home a b；将会根据这个先后顺序匹配路由。</p> <p>如下就可以匹配到相应的路由：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;Route path=&quot;/home&quot;component={Home}/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>但是如果是下面这个就会失败，也就是说他是根据路径一级一级查询的，可以包含前面那一部分，但并不是只包含部分就可以。</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;Route path=&quot;/a&quot; component={Home}/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>当然也可以使用这个精确的匹配 exact={true}</p> <p>如以下：这样就精确的匹配/home，则上面的/home/a/b就不行了</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;Route exact={true}  path=&quot;/home&quot; component={Home}/&gt;
+或者
+&lt;Route exact path=&quot;/home&quot; component={Home}/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>​</p> <h2 id="初始化路由"><a href="#初始化路由" class="header-anchor">#</a> 初始化路由</h2> <p>在配置好路由，最开始打开页面的时候，应该是不会匹配到任意一个组件。这个时候页面就显得极其不合适，此时应该默认的匹配到一个组件。</p> <p><img src="/assets/img/RouterDef.8237d5d6.gif" alt="空组件"></p> <p>此时就需要使用Redirect进行默认匹配了。如下的代码就是默认匹配/home路径所到的组件</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;Switch&gt;
+    &lt;Route path=&quot;/about&quot;component={About}/&gt;
+    {/* exact={true}：开启严格匹配的模式，路径必须一致 */}
+    &lt;Route   path=&quot;/home&quot; component={Home}/&gt;
+    {/* Redirect:如果上面的都没有匹配到，就匹配到这个路径下面 */}
+    &lt;Redirect  to = &quot;/home&quot;/&gt;
+&lt;/Switch&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>就可以做到如下的效果：</p> <h2 id="嵌套路由"><a href="#嵌套路由" class="header-anchor">#</a> <img src="/assets/img/RouterSetDef.5023a186.gif" alt="设置默认值">嵌套路由</h2> <p>简单来说就是在一个路由组件中又使用了一个路由，就形成了嵌套路由。</p> <p>举个例子来说：</p> <p>我们在home这个路由组件中又添加两个组件：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>APP.jsx:
+&lt;Route   path=&quot;/home&quot; component={Home}/&gt;
+Home.jsx:
+&lt;div&gt;
+    &lt;ul className=&quot;nav nav-tabs&quot;&gt;
+    &lt;li&gt;
+    	&lt;MyNavLink to = &quot;/home/news&quot;&gt;News&lt;/MyNavLink&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    	&lt;MyNavLink  to = &quot;/home/message&quot;&gt;Message&lt;/MyNavLink&gt;
+    &lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;Switch&gt;
+        &lt;Route path = &quot;/home/news&quot; component={News} /&gt;
+        &lt;Route path = &quot;/home/message&quot; component={Message} /&gt;
+        &lt;Redirect to=&quot;/home/message&quot;/&gt;
+    &lt;/Switch&gt;
+&lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>react中路由的注册是有顺序的，因此在匹配的时候也是按照这个顺序进行的，因此会先匹配父组件中的路由</p> <p>比如上面的 /home/news的路由处理过程：</p> <p>1.因为父组件home的路由是先注册的，因此在匹配的时候先去找home的路由，也就是根据/home/news先模糊匹配到/home</p> <p>2.在去Home组件里面去匹配相应的路由，从而找到了/home/news进行匹配，因此找到了News组件。</p> <p>但是如果开启精确匹配，就会在第一步的时候卡住，这个时候就走不下去了。<strong>因此不要轻易的使用精确匹配</strong></p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">最后更新时间: </span> <span class="time">9/2/2022, 5:47:50 PM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div></div><div class="kanbanniang" data-v-703c69c2><div class="banniang-container" style="display:;" data-v-703c69c2><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-703c69c2>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-703c69c2><i class="kbnfont kbn-ban-home ban-home" data-v-703c69c2></i> <i class="kbnfont kbn-ban-message message" data-v-703c69c2></i> <i class="kbnfont kbn-ban-close close" data-v-703c69c2></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-703c69c2><i class="kbnfont kbn-ban-info info" data-v-703c69c2></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-703c69c2></i></div> <canvas id="banniang" width="240" height="352" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-703c69c2></canvas></div> <div class="showBanNiang" style="display:none;" data-v-703c69c2>
+    看板娘
+  </div></div></div></div>
+    <script src="/assets/js/app.5891d3f4.js" defer></script><script src="/assets/js/3.2594613d.js" defer></script><script src="/assets/js/1.ab4206fb.js" defer></script><script src="/assets/js/4.22e4a246.js" defer></script>
+  </body>
+</html>
